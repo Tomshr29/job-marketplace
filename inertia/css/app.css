@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="password"],
+  [type="tel"],
+  textarea {
+    @apply w-full scale-y-95 rounded-[7px] border border-neutral-300 py-3 font-medium tracking-tight antialiased shadow-md placeholder:uppercase placeholder:text-neutral-400;
+  }
+}
